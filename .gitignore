@@ -1,0 +1,12 @@
+__pycashe__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+
+.idea/
+.vscode/
+
+.DS_Store
