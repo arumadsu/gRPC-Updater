@@ -22,25 +22,20 @@ _runtime_version.ValidateProtobufRuntimeVersion(
 _sym_db = _symbol_database.Default()
 
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rupdater.proto\"\x13\n\x11GetVersionRequest\"H\n\x0bVersionInfo\x12\x10\n\x08\x64ir_name\x18\x01 \x01(\t\x12\x11\n\tbuild_tag\x18\x02 \x01(\t\x12\x14\n\x0cversion_name\x18\x03 \x01(\t\"5\n\x13GetVersionsResponse\x12\x1e\n\x08versions\x18\x01 \x03(\x0b\x32\x0c.VersionInfo\")\n\rUpdateRequest\x12\x18\n\x10selected_version\x18\x01 \x01(\t\"2\n\x0eUpdateResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x0f\n\x07message\x18\x02 \x01(\t2\x80\x01\n\nUpdaterApp\x12@\n\x14GetAvailableVersions\x12\x12.GetVersionRequest\x1a\x14.GetVersionsResponse\x12\x30\n\rPerformUpdate\x12\x0e.UpdateRequest\x1a\x0f.UpdateResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\rupdater.proto\x1a\x1bgoogle/protobuf/empty.proto\"H\n\x0bVersionInfo\x12\x10\n\x08\x64ir_name\x18\x01 \x01(\t\x12\x11\n\tbuild_tag\x18\x02 \x01(\t\x12\x14\n\x0cversion_name\x18\x03 \x01(\t\"5\n\x13GetVersionsResponse\x12\x1e\n\x08versions\x18\x01 \x03(\x0b\x32\x0c.VersionInfo2R\n\nUpdaterApp\x12\x44\n\x14GetAvailableVersions\x12\x16.google.protobuf.Empty\x1a\x14.GetVersionsResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
 _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'updater_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
-  _globals['_GETVERSIONREQUEST']._serialized_start=17
-  _globals['_GETVERSIONREQUEST']._serialized_end=36
-  _globals['_VERSIONINFO']._serialized_start=38
-  _globals['_VERSIONINFO']._serialized_end=110
-  _globals['_GETVERSIONSRESPONSE']._serialized_start=112
-  _globals['_GETVERSIONSRESPONSE']._serialized_end=165
-  _globals['_UPDATEREQUEST']._serialized_start=167
-  _globals['_UPDATEREQUEST']._serialized_end=208
-  _globals['_UPDATERESPONSE']._serialized_start=210
-  _globals['_UPDATERESPONSE']._serialized_end=260
-  _globals['_UPDATERAPP']._serialized_start=263
-  _globals['_UPDATERAPP']._serialized_end=391
+  _globals['_VERSIONINFO']._serialized_start=46
+  _globals['_VERSIONINFO']._serialized_end=118
+  _globals['_GETVERSIONSRESPONSE']._serialized_start=120
+  _globals['_GETVERSIONSRESPONSE']._serialized_end=173
+  _globals['_UPDATERAPP']._serialized_start=175
+  _globals['_UPDATERAPP']._serialized_end=257
 # @@protoc_insertion_point(module_scope)

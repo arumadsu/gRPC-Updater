@@ -3,6 +3,7 @@
 import grpc
 import warnings
 
+from google.protobuf import empty_pb2 as google_dot_protobuf_dot_empty__pb2
 import updater_pb2 as updater__pb2
 
 GRPC_GENERATED_VERSION = '1.78.0'
@@ -36,13 +37,8 @@ class UpdaterAppStub(object):
         """
         self.GetAvailableVersions = channel.unary_unary(
                 '/UpdaterApp/GetAvailableVersions',
-                request_serializer=updater__pb2.GetVersionRequest.SerializeToString,
+                request_serializer=google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
                 response_deserializer=updater__pb2.GetVersionsResponse.FromString,
-                _registered_method=True)
-        self.PerformUpdate = channel.unary_unary(
-                '/UpdaterApp/PerformUpdate',
-                request_serializer=updater__pb2.UpdateRequest.SerializeToString,
-                response_deserializer=updater__pb2.UpdateResponse.FromString,
                 _registered_method=True)
 
 
@@ -55,24 +51,13 @@ class UpdaterAppServicer(object):
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def PerformUpdate(self, request, context):
-        """Missing associated documentation comment in .proto file."""
-        context.set_code(grpc.StatusCode.UNIMPLEMENTED)
-        context.set_details('Method not implemented!')
-        raise NotImplementedError('Method not implemented!')
-
 
 def add_UpdaterAppServicer_to_server(servicer, server):
     rpc_method_handlers = {
             'GetAvailableVersions': grpc.unary_unary_rpc_method_handler(
                     servicer.GetAvailableVersions,
-                    request_deserializer=updater__pb2.GetVersionRequest.FromString,
+                    request_deserializer=google_dot_protobuf_dot_empty__pb2.Empty.FromString,
                     response_serializer=updater__pb2.GetVersionsResponse.SerializeToString,
-            ),
-            'PerformUpdate': grpc.unary_unary_rpc_method_handler(
-                    servicer.PerformUpdate,
-                    request_deserializer=updater__pb2.UpdateRequest.FromString,
-                    response_serializer=updater__pb2.UpdateResponse.SerializeToString,
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
@@ -100,35 +85,8 @@ class UpdaterApp(object):
             request,
             target,
             '/UpdaterApp/GetAvailableVersions',
-            updater__pb2.GetVersionRequest.SerializeToString,
+            google_dot_protobuf_dot_empty__pb2.Empty.SerializeToString,
             updater__pb2.GetVersionsResponse.FromString,
-            options,
-            channel_credentials,
-            insecure,
-            call_credentials,
-            compression,
-            wait_for_ready,
-            timeout,
-            metadata,
-            _registered_method=True)
-
-    @staticmethod
-    def PerformUpdate(request,
-            target,
-            options=(),
-            channel_credentials=None,
-            call_credentials=None,
-            insecure=False,
-            compression=None,
-            wait_for_ready=None,
-            timeout=None,
-            metadata=None):
-        return grpc.experimental.unary_unary(
-            request,
-            target,
-            '/UpdaterApp/PerformUpdate',
-            updater__pb2.UpdateRequest.SerializeToString,
-            updater__pb2.UpdateResponse.FromString,
             options,
             channel_credentials,
             insecure,
