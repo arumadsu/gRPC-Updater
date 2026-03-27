@@ -1,0 +1,28 @@
+REPOSITORY                      TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_ap_manager   0.9.source-20250325090633   sha256:9149768cc272841007d611b8c0da2da01fd7c680eebcdef569805bbc90a0d7a5   3 minutes ago   309MB
+REPOSITORY                              TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_anemometer_manager   0.9.source-20250325090633   sha256:402f900a6222ceabc07e6fc131912136b0fb7fc139f3bea8d8540dccd0af471d   2 minutes ago   306MB
+REPOSITORY                       TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_time_server   0.9.source-20250325090633   sha256:d45140636f38abc5574cca918da4a7cced78c9a191331daf14342ff58ff1c32b   2 minutes ago   312MB
+REPOSITORY                       TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_broadcaster   0.9.source-20250325090633   sha256:50fef52560618f0cefb7569092efd569498dc0de78888847628ba3cedb05107f   2 minutes ago   304MB
+REPOSITORY                   TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_udp_api   0.9.source-20250325090633   sha256:a64cfda524ea745bb560643aee86ec4eca338bcfec3615c4bfb3b8d7bdfe847c   2 minutes ago   308MB
+REPOSITORY                             TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_monitoring_system   0.9.source-20250325090633   sha256:e394710f0a9ebef517aa6f20f4773b0ea823a643472cc2ce7c614fa169917f22   2 minutes ago   304MB
+REPOSITORY                           TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_rtklora_manager   0.9.source-20250325090633   sha256:9cdce0805be84f06fb5bd4560fc59f7510d1656458814c07640069512ed3468a   2 minutes ago   365MB
+REPOSITORY                    TAG                         IMAGE ID                                                                  CREATED         SIZE
+localhost:5100/gcs_dispatch   0.9.source-20250325090633   sha256:536a37fa86ac74de24b16a1e852945a753d0fda93ca25e07c0634743a605476e   2 minutes ago   912MB
+REPOSITORY                    TAG                         IMAGE ID                                                                  CREATED              SIZE
+localhost:5100/gcs_frontend   0.9.source-20250325090633   sha256:01435554df80ee5d8ce15a4d989c08d0550ef5f243836541b9ed54e8419f41a7   About a minute ago   1.37GB
+REPOSITORY                         TAG                         IMAGE ID                                                                  CREATED          SIZE
+localhost:5100/gcs_drone_manager   0.9.source-20250325090633   sha256:5794bbb385a78cb22dd169dd267b804001e0706f45a42c2c971e862981453eea   53 seconds ago   353MB
+REPOSITORY                          TAG                         IMAGE ID                                                                  CREATED          SIZE
+localhost:5100/gcs_broker_lorartk   0.9.source-20250325090633   sha256:95dc865645451a578e12d3f9435f164ff87837a7a2d23bbd88661bf1617613e1   46 seconds ago   443MB
+REPOSITORY                           TAG                         IMAGE ID                                                                  CREATED          SIZE
+localhost:5100/gcs_license_manager   0.9.source-20250325090633   sha256:43a92decb2988f75ac4a3a9fccfa4145657d8e082dca1ed8d32143fd612b899a   40 seconds ago   326MB
+REPOSITORY                   TAG                         IMAGE ID                                                                  CREATED          SIZE
+localhost:5100/data_bundle   0.9.source-20250325090633   sha256:33485f24be1d8a11b8cb7242d22fa03ee60f245473e8b8169b8b59594be62f1b   12 seconds ago   3.5MB
+REPOSITORY               TAG                         IMAGE ID                                                                  CREATED        SIZE
+localhost:5100/updater   0.9.source-20250325090633   sha256:f7a384588c780430c03d16dd0ed50a90c8bfb22a4edf96d0fe77c57834197026   5 months ago   617MB

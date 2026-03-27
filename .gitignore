@@ -1,12 +1,25 @@
-__pycashe__/
-*.pyc
-*.pyo
-*.pyd
+# Logs and empty files
+*.log
+*.tmp
+temp/
+
+
+# System files
+.DS_Store
+
+.vscode
+.idea
+
+instance/
+*.db
+*.sqlite3
 
 .venv/
 venv/
+env/
 
-.idea/
-.vscode/
-
-.DS_Store
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
